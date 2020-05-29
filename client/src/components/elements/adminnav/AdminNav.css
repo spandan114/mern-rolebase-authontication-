@@ -1,0 +1,65 @@
+.nav-bg {
+    font-family: "Poppins" !important;
+    background-color: hsl(0, 0%, 92%);
+  }
+  
+   /* Step 1 */
+  .wrapper {
+    width: 100%;
+    display: flex;
+  }
+  .main-content {
+    width: 100%;
+    margin-left: 0px;
+     /* transform: translateX(200px); */
+  }
+  #sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0px;
+    background: #2f80cb;
+    z-index: 10;
+    height: 100vh;
+    margin-left: -200px;
+  }
+  
+  .main-content,
+  #sidebar {
+    transition: 0.4s ease;
+  }
+  
+  .icon-toggle {
+    color: #2f80cb;
+    font-size: 1.3em;
+  }
+   /* Step 1 */
+  
+   /* Step 2 */
+  #sidebar.active {
+    margin-left: 0px;
+  }
+  #sidebar.active ~ .main-content {
+    margin-left: 200px;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar {
+      margin-left: -250px;
+    }
+    #sidebar.active {
+      width: 250px;
+      margin-left: 0px;
+    }
+    .main-content {
+      margin-left: 0;
+    }
+  
+    #sidebar.active ~ .main-content {
+      margin-left: 250px;
+    }
+  }
+   /* Step 2
+    the power of kepepet */
+  i {
+    margin-right: 10px;
+  }

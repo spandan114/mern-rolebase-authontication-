@@ -1,0 +1,22 @@
+{
+  "name": "mern_contextapi_boilerplate",
+  "version": "1.0.0",
+  "description": "mern context api boiler plate with login registration",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "spandan joshi",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "jquery": "^3.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.10",
+    "popper.js": "^1.16.1",
+    "react-router-dom": "^5.1.2",
+    "react-strap": "0.0.1"
+  }
+}
